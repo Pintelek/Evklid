@@ -1081,7 +1081,7 @@ textarea:focus-visible {
 }
 /* ===== 320 =================== */
 
-@media(max-width: 320px){
+@media(max-width: 400px){
   .container{
     max-width: calc(290/320 * 100vw);
   }
