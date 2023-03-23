@@ -306,7 +306,7 @@ textarea:focus-visible {
 } */
 
 .buttons {
-  z-index: 10;
+  z-index: 5;
   position: absolute;
   bottom: 30px;
   left: 50%;
