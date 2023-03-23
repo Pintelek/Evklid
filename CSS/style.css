@@ -25,7 +25,9 @@ ul {
   list-style: none;
   padding: 0;
 }
-
+input{
+  font-family: 'Montserrat', sans-serif;
+}
 a {
   text-decoration: none;
 }
@@ -48,7 +50,7 @@ textarea:focus-visible {
 }
 
 .container {
-  max-width: 91vw;
+  max-width: 92.4vw;
   margin: 0 auto;
 }
 
@@ -97,7 +99,9 @@ textarea:focus-visible {
   line-height: 29px;
   color: #000000;
 }
-
+.about-left-320px{
+  display: none;
+}
 /* ======================= Header ================== */
 
 .header {
@@ -202,14 +206,17 @@ textarea:focus-visible {
   width: 225px;
   height: 72px
 }
-
+.header-rigth{
+  display: flex;
+}
 .header-list {
+  margin-right: calc(260/1920 * 100vw);
   display: flex;
   align-items: center;
 }
 
 .header-item:not(:last-child) {
-  margin-right: 85px;
+  margin-right: calc(85/1920 * 100vw);
 }
 
 .header-link {
@@ -279,8 +286,14 @@ textarea:focus-visible {
   width: 100%;
 
 }
+.img-hero-bg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-.slide-1 {
+/* .slide-1 {
   background: url(../IMG/bg-hero1.png)center/cover no-repeat;
 }
 
@@ -290,7 +303,7 @@ textarea:focus-visible {
 
 .slide-3 {
   background: url(../IMG/bg-hero3.png)center/cover no-repeat;
-}
+} */
 
 .buttons {
   z-index: 10;
@@ -839,7 +852,7 @@ textarea:focus-visible {
   }
 
   .container {
-    width: 924px;
+    width:calc(924/1024 * 100vw);
   }
 
   .header-container {
@@ -969,11 +982,11 @@ textarea:focus-visible {
   }
 }
 
-/* ============= 678 ================== */
+/* ============= 768 ================== */
 
 @media(max-width: 768px) {
   .container{
-    max-width: 668px;
+    max-width:calc(668/768 *100vw);
   }
   /* ===== Burger ======= */
   .burger-list{
@@ -1009,7 +1022,7 @@ textarea:focus-visible {
   /* ========= Step ========== */
 
   .nav-haw-item:not(:last-child){
-    margin-right: 155px;
+    margin-right:calc(155/768 *100vw);
   }
 
   .step-wrap.active{
@@ -1064,5 +1077,220 @@ textarea:focus-visible {
 }
 .social{
   margin-top: 16px;
+}
+}
+/* ===== 320 =================== */
+
+@media(max-width: 320px){
+  .container{
+    max-width: calc(290/320 * 100vw);
+  }
+  
+.header{
+  padding: 22px 0;
+}
+.header-logo{
+  width: 110px;
+  height: 35px;
+}
+/* =========== Hero =========== */
+
+.section-hero{
+  margin-top: 30px;
+}
+.description-hero{
+  margin: 0 18px;
+  padding: 60px 0;
+  display: flex;flex-direction: column;
+  align-items: center;
+}
+.hero-title{
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+.hero-text{
+  margin-top: 6px;
+  font-size: 12px;
+line-height: 15px;
+  text-align: center;
+}
+.hero-btn{
+  margin-top: 32px;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 15px;
+}
+.ellipse{
+  height: 10px;
+  width: 10px;
+}
+/* ======== About ==== */
+.about-container{
+  margin-top: 60px;
+}
+.section-title{
+  font-size: 24px;
+  line-height: 29px;
+}
+.section-text{
+  font-size: 14px;
+  line-height: 28px;
+}
+.wrap{
+  margin-top: 14px;
+}
+.about-left{
+  display: none;
+}
+.about-left-320px{
+  display: block;
+}
+.left-element-320px{
+  display: block;
+}
+.about-left-text-320px{
+  margin-top: 8px;
+}
+.about-btn-320px{
+  margin-top: 12px;
+  padding: 12px 44px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 15px;
+}
+.about-item{
+  padding: 0;
+  border: none;
+  display: block;
+}
+.icon-colum{
+  width: 64px;
+}
+.title-about-right{
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.about-item-discription{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+}
+/* ======= How ===  */
+.how-container{
+  margin-top: 61px;
+}
+.nav-how{
+  margin-top: 20px;
+}
+.nav-how-link{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.nav-haw-item:not(:last-child){
+  margin-right: 43px;
+}
+.step-wrap{
+  margin-top: 16px;
+}
+.right-col{
+  height: 160px;
+  border-radius: 16px;
+}
+.step-col{
+  margin-top: 16px;
+}
+.subtitle{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+}
+.step-description{
+  margin-top: 8px;
+}
+.wrap-btn-how{
+  margin-top: 25px;
+}
+.step-btn{
+  padding: 12px 43px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+.btn-contract{
+  font-weight: 400;
+  margin-left: 10px;
+  padding: 12px 32px;
+}
+/* ===== FAQ ===== */
+.faq-container{
+  margin-top: 60px;
+}
+.fuq-list{
+  margin-top: 16px;
+}
+.faq-item{
+  padding:30px 0;
+}
+.fuq-subtitle{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.fuq-icon{
+  margin-left: 14px;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+}
+/* ===== Footer ==== */
+
+.footer-row{
+  padding: 33px 0;
+}
+.footer-center{
+  border-bottom: 1px solid #414141;
+}
+.footer-form{
+  margin-top: 20px;
+}
+.footer-input{
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 32px;
+}
+.footer-input::placeholder{
+  font-size: 14px;
+  line-height: 32px;
+}
+.btn-footer-form{
+  margin-top: 0;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 16px;
+}
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo{
+margin-top: 16px;
+height: 42px;
+width: 131px;
+}
+.social-icon{
+  width: 40px;
+}
+.social-link:not(:last-child){
+  margin-right: 16px;
 }
 }
