@@ -1150,6 +1150,9 @@ line-height: 15px;
 .left-element-320px{
   display: block;
 }
+.left-element-320px img{
+  width: 100%;
+}
 .about-left-text-320px{
   margin-top: 8px;
 }
@@ -1192,7 +1195,7 @@ line-height: 15px;
   line-height: 17px;
 }
 .nav-haw-item:not(:last-child){
-  margin-right: 43px;
+  margin-right:calc(44/320*100vw);
 }
 .step-wrap{
   margin-top: 16px;
