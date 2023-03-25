@@ -276,10 +276,9 @@ textarea:focus-visible {
   display: flex;
   position: absolute;
   left: 0;
-  /* transition: transform .3s linear; */
+  transition: transform .3s linear;
   height: 100%;
-  max-width: 100%;
-  /* width: calc(100%*3); */
+  width: calc(100%*3);
 }
 
 .img-hero-bg {
@@ -338,7 +337,7 @@ textarea:focus-visible {
 }
 
 .description-hero {
-  z-index: 5;
+  /* z-index: 5; */
   /* position: absolute; */
   position: relative;
   margin-left: 80px;

@@ -33,19 +33,19 @@ function changeActive(){
 
 // =========================== Slider ======================
 
-// const sliders = document.querySelector('.hero-slider');
-// const cilcle = document.querySelectorAll('.ellipse');
+const sliders = document.querySelector('.hero-slider');
+const cilcle = document.querySelectorAll('.ellipse');
 
-// cilcle.forEach( (item, key) => item.addEventListener('click', ()=> {
-//   nextImg(key)
-// }))
+cilcle.forEach( (item, key) => item.addEventListener('click', ()=> {
+  nextImg(key)
+}))
 
-// function nextImg(key){
-//   deliteClass(cilcle);
+function nextImg(key){
+  deliteClass(cilcle);
 
-//   cilcle[key].classList.add('active');
-//   sliders.style.transform = `translateX(${key * -100/3}%)`;
-// }
+  cilcle[key].classList.add('active');
+  sliders.style.transform = `translateX(${key * -100/3}%)`;
+}
 
 // ================= FAQ =============
 
