@@ -337,8 +337,6 @@ textarea:focus-visible {
 }
 
 .description-hero {
-  /* z-index: 5; */
-  /* position: absolute; */
   position: relative;
   margin-left: 80px;
   color: #FFFFFF;
