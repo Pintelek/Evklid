@@ -167,7 +167,7 @@ textarea:focus-visible {
 
 .burger-up.active {
   display: flex;
-  z-index: 10;
+  z-index: 20;
 }
 
 .burger-list {
@@ -273,19 +273,18 @@ textarea:focus-visible {
 
 /* ========= hero-slider  =========== */
 .hero-slider {
-  display: flex;
   position: absolute;
   left: 0;
   transition: transform .3s linear;
   height: 100%;
-  width: calc(100%*3);
+  width: 100%;
 }
 
 .img-hero-bg {
   height: 100%;
   width: 100%;
-
 }
+
 .img-hero-bg img{
   width: 100%;
   height: 100%;
@@ -293,34 +292,22 @@ textarea:focus-visible {
   object-position: center;
 }
 
-/* .slide-1 {
-  background: url(../IMG/bg-hero1.png)center/cover no-repeat;
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: var(--swiper-pagination-bottom,30px);
 }
 
-.slide-2 {
-  background: url(../IMG/bg-hero2.png)center/cover no-repeat;
-}
-*/
-
-.buttons {
-  z-index: 5;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+.swiper-pagination-bullet{
+  height: 15px;
+  width: 15px;
+  background-color: #CACACA;  
 }
 
-.ellipse:not(:last-child) {
-  margin-right: 20px;
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap,20px);
 }
 
-.ellipse {
-  fill: #CACACA;
-  cursor: pointer;
-}
-
-.ellipse.active {
-  fill: #FFFFFF;
+.swiper-pagination-bullet-active{
+  background: #fff;
 }
 /* ========================== */
 .section-hero {
@@ -339,6 +326,7 @@ textarea:focus-visible {
   color: #FFFFFF;
   max-width: 837px;
   padding: 100px 0;
+  z-index: 5;
 }
 
 .hero-title {

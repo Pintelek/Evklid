@@ -10,7 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   <!-- swiper -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <!-- ------ -->
 	<link rel="stylesheet" href="./CSS/normolize.css">
 	<link rel="stylesheet" href="./CSS/style.css">
@@ -81,87 +81,36 @@
 	<main class="main">
 		<section class="section-hero">
 			<div class="container container-hero">
-				<div class="buttons">
-					<svg class="ellipse active" width="15" height="15" viewBox="0 0 15 15" fill="none">
-						<circle cx="7.5" cy="7.5" r="7.5" />
-					</svg>
-					<svg class="ellipse " width="15" height="15" viewBox="0 0 15 15" fill="none">
-						<circle cx="7.5" cy="7.5" r="7.5" />
-					</svg>
-					<svg class="ellipse " width="15" height="15" viewBox="0 0 15 15" fill="none">
-						<circle cx="7.5" cy="7.5" r="7.5" />
-					</svg>
+				<div class="swiper-pagination">
 				</div>
-				<!-- <div class="hero-slider">
-          =====
-          <div class="swiper">
-            Additional required wrapper
-            <div class="swiper-wrapper">
-              
-              <div class="swiper-slide img-hero-bg slide-1">
-                <picture>
-                  <source media="(max-width: 320px)" srcset="./IMG/bg-hero1-320px.png">
-                  <source media="(max-width: 768px)" srcset="./IMG/bg-hero1-768px.png">
-                  <source media="(max-width: 1024px)" srcset="./IMG/bg-hero1-1024px.png">
-                  <img class="z-index"  src="./IMG/bg-hero1-1920px.png" alt="">
-                </picture>
-              </div>
-              <div class="swiper-slide img-hero-bg slide-2">
-                <picture>
-                  <source media="(max-width: 320px)" srcset="./IMG/bg-hero2-320px.png">
-                  <source media="(max-width: 768px)" srcset="./IMG/bg-hero2-768px.png">
-                  <source media="(max-width: 1024px)" srcset="./IMG/bg-hero2-1024px.png">
-                  <img class="z-index" src="./IMG/bg-hero2-1920px.png" alt="">
-                </picture>
-              </div>
-              <div class="swiper-slide img-hero-bg slide-3">
-                <picture>
-                  <source media="(max-width: 320px)" srcset="./IMG/bg-hero3-320px.png">
-                  <source media="(max-width: 768px)" srcset="./IMG/bg-hero3-768px.png">
-                  <source media="(max-width: 1024px)" srcset="./IMG/bg-hero3-1024px.png">
-                  <img class="z-index" src="./IMG/bg-hero3-1920px.png" alt="">
-                </picture>
-              </div>
-              
-            </div>
-            If we need pagination
-            <div class="swiper-pagination"></div>
-          
-            If we need navigation buttons
-            <div class="swiper-button-prev swiper-btn"></div>
-            <div class="swiper-button-next swiper-btn"></div>
-          
-            If we need scrollbar
-            <div class="swiper-scrollbar"></div>
-          </div> -->
-
-          <!-- ======= -->
           <div class="hero-slider">
-					<div class="img-hero-bg slide-1">
-						<picture>
-							<source media="(max-width: 320px)" srcset="./IMG/bg-hero1-320px.png">
-							<source media="(max-width: 768px)" srcset="./IMG/bg-hero1-768px.png">
-							<source media="(max-width: 1024px)" srcset="./IMG/bg-hero1-1024px.png">
-							<img src="./IMG/bg-hero1-1920px.png" alt="">
-						</picture>
-					</div>
-					<div class="img-hero-bg slide-2">
-						<picture>
-							<source media="(max-width: 320px)" srcset="./IMG/bg-hero2-320px.png">
-							<source media="(max-width: 768px)" srcset="./IMG/bg-hero2-768px.png">
-							<source media="(max-width: 1024px)" srcset="./IMG/bg-hero2-1024px.png">
-							<img src="./IMG/bg-hero2-1920px.png" alt="">
-						</picture>
-					</div>
-					<div class="img-hero-bg slide-3">
-						<picture>
-							<source media="(max-width: 320px)" srcset="./IMG/bg-hero3-320px.png">
-							<source media="(max-width: 768px)" srcset="./IMG/bg-hero3-768px.png">
-							<source media="(max-width: 1024px)" srcset="./IMG/bg-hero3-1024px.png">
-							<img src="./IMG/bg-hero3-1920px.png" alt="">
-						</picture>
-					</div>
-				</div> 
+					<div class="swiper-wrapper">
+            <div class="img-hero-bg slide-1 swiper-slide">
+              <picture>
+                <source media="(max-width: 320px)" srcset="./IMG/bg-hero1-320px.png">
+                <source media="(max-width: 768px)" srcset="./IMG/bg-hero1-768px.png">
+                <source media="(max-width: 1024px)" srcset="./IMG/bg-hero1-1024px.png">
+                <img src="./IMG/bg-hero1-1920px.png" alt="">
+              </picture>
+            </div>
+            <div class="img-hero-bg slide-2 swiper-slide">
+              <picture>
+                <source media="(max-width: 320px)" srcset="./IMG/bg-hero2-320px.png">
+                <source media="(max-width: 768px)" srcset="./IMG/bg-hero2-768px.png">
+                <source media="(max-width: 1024px)" srcset="./IMG/bg-hero2-1024px.png">
+                <img src="./IMG/bg-hero2-1920px.png" alt="">
+              </picture>
+            </div>
+            <div class="img-hero-bg slide-3 swiper-slide">
+              <picture>
+                <source media="(max-width: 320px)" srcset="./IMG/bg-hero3-320px.png">
+                <source media="(max-width: 768px)" srcset="./IMG/bg-hero3-768px.png">
+                <source media="(max-width: 1024px)" srcset="./IMG/bg-hero3-1024px.png">
+                <img src="./IMG/bg-hero3-1920px.png" alt="">
+              </picture>
+            </div>
+          </div>
+				</div>
 				<div class="description-hero">
             <h1 class="hero-title title">Проектные решения любой сложности</h1>
             <p class="hero-text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
@@ -500,8 +449,8 @@
 			</div>
 		</div>
 	</footer>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
-  <!-- <script src="./JS/swiper.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./JS/swiper.js"></script>
 	<script src="./JS/scrypt.js"></script>
 </body>
 

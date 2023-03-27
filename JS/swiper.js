@@ -1,26 +1,16 @@
-document.addEventListener('DOMContentLoaded', ()=>{
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    // direction: 'vertical',
-    loop: true,
-    createElements: true,
-    effect: 'fade',
 
-  
-    // If we need pagination
+document.addEventListener('DOMContentLoaded', ()=>{
+  const swiper = new Swiper('.hero-slider',{
+    loop: true,
+    touchAngle: 90,
+    effect: 'slide',
+    speed: 400,
+    spaceBetween: 0,
     pagination: {
       el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+      dynamicBullets: false,
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+  })
 })
