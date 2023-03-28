@@ -4,6 +4,7 @@
 
 html {
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1101,7 +1102,8 @@ textarea:focus-visible {
 .description-hero{
   margin: 60px 18px;
   padding: 0 0;
-  display: flex;flex-direction: column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .hero-title{
@@ -1316,4 +1318,44 @@ width: 131px;
   max-width: 100%;
   height: 100%;
   /* z-index: -5; */
+}
+
+/*  ================== */
+.footer{
+  position: relative;
+}
+.form-window{
+  padding: 20px;
+  height: 60vh;
+  width: 90vw;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  border-radius: 20px;
+  background: var(--color-hover-btn);
+  color: #000000;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition-property: transform ;
+  transition-duration: .8s;
+  transition-timing-function: ease;
+}
+.window-title{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 25px;
+  opacity: 1;
+}
+.email-window{
+  font-size: 20px;
+  line-height: 130%;
+  opacity: 1;
+}
+
+.form-window.active{
+  transform: translate(-50%, 20%);
 }
