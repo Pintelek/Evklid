@@ -12,6 +12,10 @@
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <!-- ------ -->
+  <!-- Accordion -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  
+  <!-- ---------- -->
 	<link rel="stylesheet" href="./CSS/normolize.css">
 	<link rel="stylesheet" href="./CSS/style.css">
 </head>
@@ -281,7 +285,7 @@
 		<section class="fuq">
 			<div class="container faq-container">
 				<h2 class="section-title title-faq">Часто задаваемые вопросы</h2>
-				<ul class="fuq-list">
+				<ul class="fuq-list" id="accordion">
 					<li class="faq-item">
 						<div class="fuq-row">
 							<h3 class="subtitle fuq-subtitle">Из чего формируется конечная стоимость проекта?</h3>
@@ -449,9 +453,12 @@
 			</div>
 		</div>
 	</footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./JS/swiper.js"></script>
 	<script src="./JS/scrypt.js"></script>
+  <script src="./JS/acordion.js"></script>
 </body>
 
 </html>

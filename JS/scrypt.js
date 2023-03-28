@@ -49,17 +49,17 @@ function nextImg(key){
 
 // ================= FAQ =============
 
-const faqSubtitles = document.querySelectorAll('.faq-item');
-console.log(faqSubtitles); 
-console.log('dsldsmkcmsdlcscs')
+// const faqSubtitles = document.querySelectorAll('.faq-item');
+// console.log(faqSubtitles); 
+// console.log('dsldsmkcmsdlcscs')
 
-faqSubtitles.forEach( (item) => item.addEventListener('click', ()=> {
-  if(item.classList.contains('active')){
-    item.classList.remove('active');
-    return;
-  }
-  item.classList.add('active');
-}))
+// faqSubtitles.forEach( (item) => item.addEventListener('click', ()=> {
+//   if(item.classList.contains('active')){
+//     item.classList.remove('active');
+//     return;
+//   }
+//   item.classList.add('active');
+// }))
 // =============== BURGER ===========
 
 document.querySelector('.burger').addEventListener('click', ()=>{

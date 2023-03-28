@@ -87,6 +87,7 @@ textarea:focus-visible {
 }
 
 .section-text {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -94,6 +95,7 @@ textarea:focus-visible {
 }
 
 .subtitle {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -634,7 +636,7 @@ textarea:focus-visible {
 
 .faq-item {
   position: relative;
-  padding: 30px 0;
+  
   border-top: 1px solid #CACACA;
   border-bottom: 1px solid #CACACA;
   margin-bottom: -1px;
@@ -654,10 +656,15 @@ textarea:focus-visible {
   color: var(--color-yellow)
 }
 
-.fuq-row {
+.fuq-row, .ui-accordion .ui-accordion-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 30px 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: #000000;
 }
 
 .fuq-subtitle {
@@ -675,15 +682,16 @@ textarea:focus-visible {
   fill: var(--color-yellow);
 }
 
-.faq-item.active .fuq-icon {
+.faq-item.active .fuq-icon, .ui-state-active .fuq-icon {
   transform: rotate(45deg);
   fill: var(--color-yellow);
 }
 
-.fuq-discription {
+.fuq-discription, .ui-widget-content {
   display: none;
   max-width: 1003px;
   margin-top: 30px;
+  border: none;
 }
 
 .faq-item.active .fuq-discription {
