@@ -66,3 +66,12 @@ document.querySelector('.burger').addEventListener('click', ()=>{
   document.querySelector('.burger-up').classList.toggle('active');
   document.querySelector('.burger-header').classList.toggle('active');
 })
+
+window.addEventListener('scroll', ()=>{
+  if(window.scrollY > 200){
+    document.querySelector('.burger-up').classList.remove('active');
+  document.querySelector('.burger-header').classList.remove('active');
+  console.log(window.scrollY);
+  }
+  
+})
