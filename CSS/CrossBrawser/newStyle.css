@@ -405,7 +405,7 @@ textarea:focus-visible {
 
 .about-left {
   border-radius: 32px;
-  background: url(../IMG/Rectangle\ 2.png)center/ cover no-repeat;
+  background: url(../../IMG/Rectangle\ 2.png)center/ cover no-repeat;
   display: flex;
   min-height: 622px;
   flex-direction: column;

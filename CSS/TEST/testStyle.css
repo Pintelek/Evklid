@@ -1,0 +1,28 @@
+
+.burger-block{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.burger-header {
+  /* transform: translateY(50%); */
+  height: 2px;
+  width: 30px;
+  background: #000;
+}
+.burger-header::after, .burger-header::before{
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+}
+.burger-header::after{
+top: 0px;
+}
+.burger-header::before{
+  bottom: 0px;
+}

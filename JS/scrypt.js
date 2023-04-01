@@ -90,7 +90,7 @@ btnForm.addEventListener('click', (event) => {
   let Email = formData.get('Email');
   let message = formData.get('message')
 
-  if (name && Email && message) {
+  if (name && Email) {
     const upWindow = document.createElement('div');
     upWindow.classList.add('form-window');
 

@@ -17,7 +17,8 @@
   
   <!-- ---------- -->
 	<link rel="stylesheet" href="./CSS/normolize.css">
-	<link rel="stylesheet" href="./CSS/style.css">
+	<!-- <link rel="stylesheet" href="./CSS/style.css"> -->
+  <link rel="stylesheet" href="./CSS/CrossBrawser/newStyle.css">
 </head>
 
 <body>
@@ -31,53 +32,55 @@
 				<div class="burger-up ">
 					<ul class="burger-list">
 						<li class="burger-item">
-							<a href="#about" tabindex="1" class="burger-link link">О нас</a>
+							<a href="#about" class="burger-link link">О нас</a>
 						</li>
 						<li class="burger-item">
-							<a href="#" tabindex="2" class="burger-link link">Проекты</a>
+							<a href="#"  class="burger-link link">Проекты</a>
 						</li>
 						<li class="burger-item">
-							<a href="#step" tabindex="3" class="burger-link link">Этапы</a>
+							<a href="#step"  class="burger-link link">Этапы</a>
 						</li>
 						<li class="burger-item">
-							<a href="#FAQ" tabindex="4" class="burger-link link">Отзывы</a>
+							<a href="#FAQ"  class="burger-link link">Отзывы</a>
 						</li>
 						<li class="burger-item">
-							<a href="#contact" tabindex="5" class="burger-link link">Контакты</a>
+							<a href="#contact"  class="burger-link link">Контакты</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<img src="./IMG/Logo.svg" alt="" class="header-logo logo">
+			<a href="#"  onclick="return false;"><img src="./IMG/Logo.svg" alt="Логотип" class="header-logo logo"></a>
 			<div class="header-rigth">
 				<nav class="header-nav">
 					<ul class="header-list">
 						<li class="header-item">
-							<a href="#about" tabindex="1" class="header-link link">О нас</a>
+							<a href="#about"  class="header-link link">О нас</a>
 						</li>
 						<li class="header-item">
-							<a href="#" tabindex="2" class="header-link link">Проекты</a>
+							<a href="#"  class="header-link link">Проекты</a>
 						</li>
 						<li class="header-item">
-							<a href="#step" tabindex="3" class="header-link link">Этапы</a>
+							<a href="#step"  class="header-link link">Этапы</a>
 						</li>
 						<li class="header-item">
-							<a href="#FAQ" tabindex="4" class="header-link link">Отзывы</a>
+							<a href="#FAQ"  class="header-link link">Отзывы</a>
 						</li>
 						<li class="header-item">
-							<a href="#contact" tabindex="5" class="header-link link">Контакты</a>
+							<a href="#contact"  class="header-link link">Контакты</a>
 						</li>
 					</ul>
 				</nav>
-				<div class="search-header">
-					<svg tabindex="6" class="search-logo" width="24" height="24" viewBox="0 0 24 24" fill="none">
-						<rect width="7.56126" height="1.89031"
-							transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black" />
-						<path
-							d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
-							stroke-width="2" />
-					</svg>
+				<div class="search-header" aria-label="Поиск"><a href="#" aria-label="Serch" onclick="return false;">
+          
+            <svg aria-label="Поиск" tabindex="6" class="search-logo" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect width="7.56126" height="1.89031"
+                transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black" />
+              <path
+                d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+                stroke-width="2" />
+            </svg>
+        </a>
 				</div>
 			</div>
 		</div>
@@ -193,10 +196,10 @@
 			<div class="container how-container">
 				<h2 class="section-title how-title">Как мы работаем</h2>
 				<ul class="nav-how">
-					<li tabindex="8" class="nav-haw-item nav-how-link active">1 шаг</li>
-					<li tabindex="9" class="nav-haw-item nav-how-link">2 шаг</li>
-					<li tabindex="10" class="nav-haw-item nav-how-link">3 шаг</li>
-					<li tabindex="11" class="nav-haw-item nav-how-link">4 шаг</li>
+					<li  class="nav-haw-item nav-how-link active"><a href="" class="nav-how-link" onclick="return false;">1 шаг</a></li>
+					<li  class="nav-haw-item nav-how-link"><a href="" class="nav-how-link" onclick="return false;">2 шаг</a></li>
+					<li  class="nav-haw-item nav-how-link"><a href="" class="nav-how-link" onclick="return false;">3 шаг</a></li>
+					<li class="nav-haw-item nav-how-link"><a href="" class="nav-how-link" onclick="return false;">4 шаг</a></li>
 				</ul>
 				<div class="step-wrap" id="step-1">
 					<div class="col-how left-col">
@@ -437,7 +440,7 @@
 				<div class="footer-col footer-center">
 					<h2 class="section-title title-form">Оставить заявку</h2>
 					<form action="" class="footer-form">
-						<input name="name" type="text" class="footer-input" placeholder="Фамилия, имя и отчество*" required>
+						<label class="hiden"></span> for="name">Фамилия, имя и отчество</label><input id="name" name="name" type="text" class="footer-input" placeholder="Фамилия, имя и отчество*" required>
 						<input name="Email" type="mail" class="footer-input" placeholder="Email*" required>
 						<textarea name="message" class="footer-textarea footer-input" placeholder="Сообщение" required></textarea>
 						<button type="submit" class="btn btn-footer-form">Отправить данные</button>
