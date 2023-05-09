@@ -337,6 +337,7 @@ textarea:focus-visible {
 }
 
 .description-hero {
+  pointer-events: none;
   position: relative;
   margin-left: 80px;
   color: #FFFFFF;
@@ -359,6 +360,7 @@ textarea:focus-visible {
 }
 
 .hero-btn {
+  pointer-events: auto;
   margin-top: 90px;
   border: none;
   font-size: 23px;
