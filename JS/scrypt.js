@@ -1,9 +1,8 @@
 const colSteps = document.querySelectorAll('.step-wrap');
 const navLinks = document.querySelectorAll('.nav-how-link');
 let activeNum;
-activeitem();
-// console.log(navLinks)
-function activeitem() {
+activeItem();
+function activeItem() {
   navLinks.forEach((item, key) => {
     if (item.classList.contains('active')) {
       activeNum = key;
@@ -12,7 +11,7 @@ function activeitem() {
     item.addEventListener('click', changeActive)
   })
 }
-function deliteClass(elem) {
+function deleteClass(elem) {
   elem.forEach(item => {
     if (item.classList.contains('active')) {
       item.classList.remove('active');
@@ -23,10 +22,10 @@ function deliteClass(elem) {
 
 function changeActive() {
   if (!this.classList.contains('active')) {
-    deliteClass(navLinks)
-    deliteClass(colSteps)
+    deleteClass(navLinks)
+    deleteClass(colSteps)
     this.classList.add('active')
-    activeitem();
+    activeItem();
   }
 
 }
@@ -34,32 +33,20 @@ function changeActive() {
 // =========================== Slider ======================
 
 const sliders = document.querySelector('.hero-slider');
-const cilcle = document.querySelectorAll('.ellipse');
+const circle = document.querySelectorAll('.ellipse');
 
-cilcle.forEach((item, key) => item.addEventListener('click', () => {
+circle.forEach((item, key) => item.addEventListener('click', () => {
   nextImg(key)
 }))
 
 function nextImg(key) {
-  deliteClass(cilcle);
+  deleteClass(circle);
 
-  cilcle[key].classList.add('active');
+  circle[key].classList.add('active');
   sliders.style.transform = `translateX(${key * -100 / 3}%)`;
 }
 
-// ================= FAQ =============
 
-// const faqSubtitles = document.querySelectorAll('.faq-item');
-// console.log(faqSubtitles); 
-// console.log('dsldsmkcmsdlcscs')
-
-// faqSubtitles.forEach( (item) => item.addEventListener('click', ()=> {
-//   if(item.classList.contains('active')){
-//     item.classList.remove('active');
-//     return;
-//   }
-//   item.classList.add('active');
-// }))
 // =============== BURGER ===========
 
 document.querySelector('.burger').addEventListener('click', () => {
@@ -75,7 +62,7 @@ window.addEventListener('scroll', () => {
 
 })
 
-// FORM===============
+// =======FORM========
 
 const btnForm = document.querySelector('.btn-footer-form');
 
@@ -106,12 +93,10 @@ btnForm.addEventListener('click', (event) => {
 
     document.querySelector('.footer').append(upWindow);
     setTimeout(() => {
-      console.log('dkskskdakdadadasdasdad');
       upWindow.classList.add('active')
     }, 300);
     setTimeout(() => {
       window.addEventListener('click', () => {
-        console.log(upWindow);
         upWindow.remove();
       })
     }, 1500)

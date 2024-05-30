@@ -386,7 +386,7 @@ textarea:focus-visible {
   margin-top: 50px;
 }
 
-.discription-about {
+.description-about {
   margin-top: 20px;
   max-width: 1235px;
 }
@@ -1089,7 +1089,7 @@ textarea:focus-visible {
 }
 /* ===== 320 =================== */
 
-@media(max-width: 400px){
+@media(max-width: 450px){
   .container{
     max-width: calc(290/320 * 100vw);
   }
